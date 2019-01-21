@@ -9,10 +9,10 @@ describe User do
 
 	describe 'initializer' do
 		it 'creates an user' do
-			# créé un utilisateur
+			# creates a user
       user = User.new("email@email.com")
 
-      # petit test si l'utilisateur est bien créé
+      # test if user has been created
       expect(user.class).to eq(User)
 		end
 	end
