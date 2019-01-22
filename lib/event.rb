@@ -29,7 +29,7 @@ class Event
 	end
 
 	def is_soon
-		@start_date - Time.now < 30
+		(@start_date - Time.now)/60 < 30 and self.is_future
 	end
 
 	def to_s
